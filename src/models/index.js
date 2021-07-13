@@ -1,5 +1,5 @@
-import TestModel from './test'
+import PageModel from './page'
 
 export default [
-    TestModel,
+    PageModel,
 ]

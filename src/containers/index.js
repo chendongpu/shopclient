@@ -4,8 +4,8 @@ import {Text,BackHandler, View, Alert} from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import SplashScreen from 'react-native-splash-screen';
 
-@connect(({ test }) => ({
-    words: test.words
+@connect(({ page }) => ({
+    pageData: page.portal.result.info,
 }))
 export default class App extends Component {
 
@@ -20,7 +20,7 @@ export default class App extends Component {
 
     onBackPress = () => {
         const { dispatch, navigation } = this.props;
-        console.log("words",this.props.words);
+        console.log("pageData",this.props.pageData);
         Alert.alert(
             '退出应用',
             '确认退出应用吗?',

@@ -10,7 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "antd-mobile-rn": "^2.3.3",
     "dva-core": "^2.0.4",
+    "moji-react-native-utils": "^2.0.9",
     "react": "17.0.1",
     "react-native": "0.64.2",
     "react-native-gesture-handler": "^1.10.3",
