@@ -8,10 +8,9 @@
 
 import React from 'react';
 import dva from './utils/dva'
+import Index from './containers/index'
 import models from './models'
-import {
-    View,Text
-} from "react-native";
+
 
 
 const app = dva({
@@ -24,4 +23,4 @@ const app = dva({
 
 export const store = app._store;
 
-export default app.start(<View><Text>Hello,world</Text></View>)
+export default app.start(<Index />)
